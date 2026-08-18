@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>国庆亲子游 · 三方案总览</title>
+<style>
+:root{
+  --blue:#1a3c7e; --teal:#2a9d8f; --orange:#e76f51; --green:#52796f;
+  --bg:#f7f9fc; --card:#fff; --text:#333; --muted:#666; --border:#e3e8ee;
+  --shadow:0 6px 24px rgba(26,60,126,.08);
+}
+*{box-sizing:border-box;}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--text);line-height:1.7;margin:0;padding:0;}
+.container{max-width:1040px;margin:0 auto;padding:24px;}
+header.hero{background:linear-gradient(135deg,var(--blue) 0%,var(--teal) 100%);color:#fff;padding:46px 24px;border-radius:0 0 24px 24px;margin-bottom:28px;}
+header.hero h1{margin:0 0 10px;font-size:2rem;}
+header.hero p{margin:0;opacity:.92;}
+.constraints{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px;}
+.constraints span{background:rgba(255,255,255,.16);padding:4px 12px;border-radius:20px;font-size:.85rem;}
+.section{background:var(--card);border-radius:16px;padding:24px;margin-bottom:20px;box-shadow:var(--shadow);}
+.section h2{margin-top:0;color:var(--blue);font-size:1.3rem;border-left:4px solid var(--teal);padding-left:12px;}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:20px;}
+.dest{display:block;background:var(--card);border:1px solid var(--border);border-radius:16px;overflow:hidden;text-decoration:none;color:var(--text);box-shadow:0 2px 8px rgba(0,0,0,.04);transition:transform .15s,box-shadow .15s;}
+.dest:hover{transform:translateY(-4px);box-shadow:var(--shadow);}
+.thumb{height:170px;background-size:cover;background-position:center;background-repeat:no-repeat;}
+.dest-body{padding:18px 18px 20px;}
+.tag-list{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:8px;}
+.tag{background:#eef4f3;color:var(--green);padding:3px 10px;border-radius:16px;font-size:.8rem;}
+.tag.blue{background:#eaf0fb;color:var(--blue);}
+.tag.orange{background:#fdf0ec;color:var(--orange);}
+.dest-body h3{margin:2px 0 8px;color:var(--blue);font-size:1.25rem;}
+.lead{margin:0 0 12px;font-size:.95rem;color:var(--muted);}
+.facts{list-style:none;padding:0;margin:0 0 14px;font-size:.9rem;}
+.facts li{padding:5px 0;border-bottom:1px dashed var(--border);}
+.facts li:last-child{border-bottom:none;}
+.facts b{color:var(--text);}
+.cta{display:inline-block;background:var(--blue);color:#fff;padding:8px 16px;border-radius:10px;font-size:.9rem;font-weight:600;}
+table{width:100%;border-collapse:collapse;margin:14px 0;font-size:.92rem;}
+th,td{border:1px solid var(--border);padding:10px 12px;text-align:left;vertical-align:top;}
+th{background:#f1f5f9;color:var(--blue);}
+tr:nth-child(even){background:#fafbfc;}
+.note{background:#fff8e6;border-left:4px solid var(--orange);padding:14px 16px;border-radius:8px;margin:16px 0;font-size:.95rem;}
+.note.blue{background:#eef4fb;border-left-color:var(--blue);}
+.note b{color:var(--orange);}
+.note.blue b{color:var(--blue);}
+footer{text-align:center;color:var(--muted);font-size:.85rem;padding:30px 0 50px;}
+@media(max-width:720px){.grid{grid-template-columns:1fr;}header.hero h1{font-size:1.5rem;}}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="container" style="padding-top:0;padding-bottom:0;">
+    <h1>🏖️ 国庆亲子游 · 三方案总览</h1>
+    <p>上海出发 · 一家三口（6 岁女童，身高 1.27m）· 江浙沪自驾 4h 内 · 全程不挪窝 · 住宿亚朵或同档</p>
+    <div class="constraints">
+      <span>📅 9/30 – 10/4（5 天 4 晚）</span>
+      <span>👧 女童 1.27m 按儿童票</span>
+      <span>🏨 住宿 700–1100/晚（新开业优先）</span>
+      <span>👨 爸爸要古镇夜市</span>
+      <span>👩 妈妈要睡好 + 外卖方便</span>
+    </div>
+  </div>
+</header>
+
+<div class="container">
+
+  <div class="section">
+    <h2>三个目的地，一次看全</h2>
+    <p style="margin-top:0;color:var(--muted);">点任意卡片进入该目的地的完整多页方案（酒店 / 乐园 / 古镇 / 每日行程 / 预算）。</p>
+    <div class="grid">
+
+      <!-- 绍兴·柯桥 -->
+      <a class="dest" href="travel-plan/index.html">
+        <div class="thumb" style="background-image:url('travel-plan/assets/images/shaoxing.jpg'),linear-gradient(135deg,#1a3c7e,#2a9d8f);"></div>
+        <div class="dest-body">
+          <div class="tag-list"><span class="tag blue">★ 首选</span><span class="tag">古镇夜市</span><span class="tag">最近玩水</span></div>
+          <h3>绍兴 · 柯桥</h3>
+          <p class="lead">玩水最近 + 古镇夜市零通勤，综合最省心。东方山水·水之王国就在酒店旁 5 分钟，柯桥古镇步行可达。</p>
+          <ul class="facts">
+            <li><b>住宿：</b>首旅南苑云荟(2023新装) / 柯桥亚朵 / 凯悦嘉轩(2025)</li>
+            <li><b>玩水：</b>东方山水·水之王国(5min) + 柯桥古镇夜游</li>
+            <li><b>预算：</b>约 5,870 – 9,710 元</li>
+            <li><b>车程：</b>上海约 2.5–3h</li>
+          </ul>
+          <span class="cta">查看完整方案 →</span>
+        </div>
+      </a>
+
+      <!-- 桐庐 -->
+      <a class="dest" href="travel-plan-tonglu/index.html">
+        <div class="thumb" style="background-image:url('travel-plan-tonglu/assets/images/atour-chengnan.jpg'),linear-gradient(135deg,#1a3c7e,#2a9d8f);"></div>
+        <div class="dest-body">
+          <div class="tag-list"><span class="tag">山水古村</span><span class="tag">县城新亚朵</span></div>
+          <h3>桐庐</h3>
+          <p class="lead">富春山居里的山水亲子游，县城 2023 新亚朵。玩水 / 漂流多在瑶琳、合村山区，每天自驾 30–50 分钟。</p>
+          <ul class="facts">
+            <li><b>住宿：</b>城南亚朵(2023，4.9 分)</li>
+            <li><b>玩水：</b>加勒比漂流 / OMG心跳乐园 / 竹溪 / 大奇山 / 深澳古村</li>
+            <li><b>预算：</b>约 6,500 – 10,100 元</li>
+            <li><b>车程：</b>上海约 3.5h</li>
+          </ul>
+          <span class="cta">查看完整方案 →</span>
+        </div>
+      </a>
+
+      <!-- 舟山 -->
+      <a class="dest" href="travel-plan-zhoushan/index.html">
+        <div class="thumb" style="background-image:url('travel-plan-zhoushan/assets/images/atour-nansha.jpg'),linear-gradient(135deg,#1a3c7e,#2a9d8f);"></div>
+        <div class="dest-body">
+          <div class="tag-list"><span class="tag">海岛沙滩</span><span class="tag">水乐园在酒店内</span></div>
+          <h3>舟山 · 朱家尖</h3>
+          <p class="lead">三个里综合最均衡：南沙亚朵 5 分钟到沙滩；预算够直接住森泊，7500㎡ 室内恒温水乐园就在酒店里。</p>
+          <ul class="facts">
+            <li><b>住宿：</b>南沙亚朵(2025) / 森泊(2024，水乐园在酒店内)</li>
+            <li><b>玩水：</b>森泊水乐园 / 南沙 / 东沙 / 大青山 / 小乌石塘 / 沈家门夜排档</li>
+            <li><b>预算：</b>约 6,400 – 11,500 元</li>
+            <li><b>车程：</b>上海约 3.5–4h（跨海大桥）</li>
+          </ul>
+          <span class="cta">查看完整方案 →</span>
+        </div>
+      </a>
+
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>一眼对比</h2>
+    <table>
+      <tr><th style="width:16%">维度</th><th>绍兴 · 柯桥</th><th>桐庐</th><th>舟山 · 朱家尖</th></tr>
+      <tr><td>玩水便利度</td><td><b>最高</b>：水之王国 5 分钟，下楼即玩</td><td>中等：玩水地分散山区 30–50min</td><td><b>高</b>：5min 到沙滩 / 水乐园在酒店内</td></tr>
+      <tr><td>住宿新度</td><td>南苑云荟 2023新装 / 凯悦 2025</td><td>城南亚朵 2023</td><td>南沙亚朵 2025 / 森泊 2024</td></tr>
+      <tr><td>夜市 / 古镇</td><td><b>柯桥古镇步行</b>（爸爸最爱）</td><td>深澳古村红灯笼夜游</td><td>沈家门海鲜夜排档（华东最大）</td></tr>
+      <tr><td>预算区间</td><td>约 5,870 – 9,710</td><td>约 6,500 – 10,100</td><td>约 6,400 – 11,500</td></tr>
+      <tr><td>单程车程</td><td>约 2.5–3h（最近）</td><td>约 3.5h</td><td>约 3.5–4h（跨海大桥）</td></tr>
+      <tr><td>最适合</td><td>想最省心、玩水近、夜市楼下</td><td>想看真山水古村、能接受开车进山</td><td>想海岛沙滩 + 室内水乐园、不怕雨</td></tr>
+    </table>
+  </div>
+
+  <div class="section">
+    <h2>怎么选？</h2>
+    <div class="note"><b>要最省心 →</b> 选柯桥（首选）。玩水最近、古镇夜市就在楼下、车程最短，带 6 岁娃最轻松。</div>
+    <div class="note blue"><b>想看真山水古村 →</b> 选桐庐。富春江、溶洞、古村都有，但要接受每天开车 30–50 分钟进山玩水。</div>
+    <div class="note"><b>想海岛 + 不怕下雨 →</b> 选舟山。沙滩挖沙、室内恒温水乐园（下雨也能玩）、海鲜夜排档，综合体验最丰富；缺点是跨海大桥国庆易堵、森泊超预算。</div>
+  </div>
+
+  <footer>
+    三个方案均为 9/30–10/4 国庆行程 · 上海自驾出发 · 一家三口（女童 1.27m 按儿童票计费）<br>
+    点击上方卡片进入对应完整方案。
+  </footer>
+
+</div>
+</body>
+</html>
