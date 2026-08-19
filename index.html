@@ -42,6 +42,19 @@ a{color:var(--primary-dark);text-decoration:none}
 .review{background:#f8fafc;border-radius:10px;padding:12px 14px;font-size:14px;margin-bottom:10px}
 .review .r-stars{color:#f59e0b;font-weight:700}
 .review .r-text{margin-top:6px;color:#374151}
+.spot-list{display:flex;flex-direction:column;gap:14px}
+.spot-card{display:flex;gap:14px;background:#fff;border:1px solid #e5e7eb;border-radius:12px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,.04);transition:transform .15s,box-shadow .15s;text-decoration:none;color:inherit}
+.spot-card:hover{transform:translateY(-2px);box-shadow:var(--shadow)}
+.spot-card img{width:130px;height:130px;object-fit:cover;flex-shrink:0}
+.spot-card .body{padding:14px;flex:1;display:flex;flex-direction:column;justify-content:center}
+.spot-card h3{margin:0 0 6px;font-size:16px;color:var(--primary-dark)}
+.spot-card .meta{font-size:13px;color:var(--muted);margin-bottom:6px}
+.spot-card p{margin:0;font-size:14px;color:#4b5563;line-height:1.5}
+.spot-card .arrow{margin-top:auto;padding-top:8px;font-size:13px;color:var(--primary-dark);font-weight:600}
+@media (max-width:600px){
+.spot-card{flex-direction:column}
+.spot-card img{width:100%;height:170px}
+}
 footer{text-align:center;color:var(--muted);font-size:12px;padding:24px 0 40px}
 </style>
 </head><body>
@@ -77,12 +90,52 @@ footer{text-align:center;color:var(--muted);font-size:12px;padding:24px 0 40px}
 </div>
 <div class="card">
 <h2>周边玩什么</h2>
-<div class="grid">
-<div><h3>芦茨村 / 芦茨湾</h3><p>免费 · 步行 0-3 分钟<br>楼下溯溪、吊床躺平、老街逛吃。</p><a href="spots/luci.html">详情</a></div>
-<div><h3>马岭古道</h3><p>免费 · 楼后入口<br>江南十大古道，亲子可走芦茨→茆坪往返段。</p><a href="spots/maling.html">详情</a></div>
-<div><h3>江南龙门湾</h3><p>免费 · 约 1km<br>富春江天然港湾，可坐电动船、水上观景。</p><a href="spots/longmen.html">详情</a></div>
-<div><h3>严子陵钓台</h3><p>¥120/成人，¥60/儿童 · 约 3km<br>乘船游览富春江小三峡，登台瞰江。</p><a href="spots/yanzi.html">详情</a></div>
-<div><h3>白云源</h3><p>约 ¥60/成人 · 约 10km<br>高山峡谷、瀑布深潭，人称“华东小九寨”。</p><a href="spots/baiyun.html">详情</a></div>
+<div class="spot-list">
+<a class="spot-card" href="spots/luci.html">
+<img src="assets/images/luci.jpg" alt="芦茨村 / 芦茨湾">
+<div class="body">
+<h3>芦茨村 / 芦茨湾</h3>
+<div class="meta">免费 · 步行 0-3 分钟</div>
+<p>楼下溯溪、吊床躺平、老街逛吃。</p>
+<div class="arrow">查看详情 →</div>
+</div>
+</a>
+<a class="spot-card" href="spots/maling.html">
+<img src="assets/images/maling.jpg" alt="马岭古道">
+<div class="body">
+<h3>马岭古道</h3>
+<div class="meta">免费 · 楼后入口</div>
+<p>江南十大古道，亲子可走芦茨→茆坪往返段。</p>
+<div class="arrow">查看详情 →</div>
+</div>
+</a>
+<a class="spot-card" href="spots/longmen.html">
+<img src="assets/images/longmen.jpg" alt="江南龙门湾">
+<div class="body">
+<h3>江南龙门湾</h3>
+<div class="meta">免费 · 约 1km</div>
+<p>富春江天然港湾，可坐电动船、水上观景。</p>
+<div class="arrow">查看详情 →</div>
+</div>
+</a>
+<a class="spot-card" href="spots/yanzi.html">
+<img src="assets/images/yanzi.jpg" alt="严子陵钓台">
+<div class="body">
+<h3>严子陵钓台</h3>
+<div class="meta">¥120/成人，¥60/儿童 · 约 3km</div>
+<p>乘船游览富春江小三峡，登台瞰江。</p>
+<div class="arrow">查看详情 →</div>
+</div>
+</a>
+<a class="spot-card" href="spots/baiyun.html">
+<img src="assets/images/baiyun.jpg" alt="白云源">
+<div class="body">
+<h3>白云源</h3>
+<div class="meta">约 ¥60/成人 · 约 10km</div>
+<p>高山峡谷、瀑布深潭，人称“华东小九寨”。</p>
+<div class="arrow">查看详情 →</div>
+</div>
+</a>
 </div>
 </div>
 <div class="card">
