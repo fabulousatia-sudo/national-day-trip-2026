@@ -1,0 +1,16 @@
+# 本地记忆与项目元数据
+.workbuddy/
+
+# 构建/抓取脚本（仅本地用，不需发布）
+*.py
+
+# 原始抓取素材目录（已并入站点 assets，无需发布）
+ctrip_fetched_images/
+wikimedia_fetched_images/
+
+# 旧单页（已被 travel-plan 站点取代）
+苏州亲子游计划.html
+
+# 系统
+.DS_Store
+Thumbs.db
